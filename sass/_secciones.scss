@@ -1,0 +1,445 @@
+
+@mixin hoverTransition {
+    box-shadow: -10px 5px 4px rgb(0, 0, 0);
+    transition-duration: 1s;
+}
+
+.sections h1{
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    box-shadow: -8px 5px 4px grey;
+    border-radius: 5px;
+    background-color: rgb(248, 190, 190);
+    transition: 0.5s ease;
+        &:hover{
+            @include hoverTransition;
+        }
+}
+
+.sections h2{
+    font-weight: bold;
+    text-align: left;
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-bottom: 1em;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: -8px 5px 4px grey;
+    background-color: rgb(252, 206, 206);
+    transition: 0.5s ease;
+        &:hover{
+            @include hoverTransition;
+        }
+}
+
+.menuItemGridBootstrap{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    // background-color: rgb(243, 221, 148);
+    background: rgb(255,241,193);
+    background: linear-gradient(0deg, rgba(255,241,193,1) 0%, rgba(243,221,148,1) 100%);
+
+    border-radius: 5px;
+    box-shadow: -9px 5px 4px grey;
+    transition: 0.5s;
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: -9px 5px 4px rgb(0, 0, 0);
+            transition: all 0.5s ease-in-out;
+        }
+}
+
+.menuItemGridBootstrapReverse{
+
+background: rgb(243,221,148);
+background: linear-gradient(0deg, rgba(243,221,148,1) 0%, rgba(255,241,193,1) 100%);     
+}
+
+
+.menuItemText{
+    padding-left: 3em; 
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+        h3 {
+            border-bottom: 2px solid black;
+            font-weight: bold;
+            font-size: 3em;
+            margin-top: 1em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+}
+
+.plusIcon{
+    text-align: right;
+    margin-top: 3em;
+}
+
+.imgPlusIcon{
+    width: 30px;
+    height: 30px;
+    transition: 0.5s ease;
+    &:hover{ 
+        cursor: pointer;
+        transform: scale(1.5) rotate(90deg);
+        transition-duration: 0.5s;
+        filter: invert(20%);
+    }
+}
+
+.menuItemTextReverse{
+
+        @extend .menuItemText;
+
+        img {
+            align-self: flex-end;
+        } 
+        h3 {
+            border-bottom: 2px solid black;
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 1.5em;
+        }
+}
+
+.sectionContacto {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionsGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.headerContacto{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.formulario{
+    width: 75%;
+    margin: auto;
+}
+
+.mapa{
+    margin: auto;
+}
+
+.map{
+    width: 75vw;
+    box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    -webkit-box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    -moz-box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    margin-bottom: 30px;
+}
+
+
+fieldset {
+    border: 3px black solid;
+    padding: 30px;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    -webkit-box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    -moz-box-shadow: -3px 5px 5px 3px rgba(0,0,0,0.37);
+    }
+
+legend{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    float: none;
+}
+
+input{
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+input[type=checkbox] {
+    margin-top:20px;
+}
+
+input[type=submit] {
+    height: 50px;
+}
+
+
+.grid-container{
+    box-sizing: border-box;
+    padding: 10px 30px 20px 30px;
+    margin: 20px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.headerPostres{
+    grid-column: span 3;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: -8px 5px 4px grey;
+    border-radius: 5px;
+    background-color: rgb(248, 190, 190);
+    transition: 0.5s ease;
+        &:hover{
+            @include hoverTransition;
+        }
+}
+
+.menuItemPostre, .menuItemPostreSecundario{
+    padding-top: 2em;
+    margin-left: 1em;
+    height: 100%;
+    p{
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+    h2, h3{
+        margin-top: 0.3em;
+        font-size: 3em;
+        text-decoration-line: underline;
+    }
+
+}
+
+.itemPostrePrincipal{
+
+    @extend .menuItemGridBootstrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 20px;
+}
+
+.itemPostreSecundario{
+    @extend .menuItemGridBootstrap;
+    margin-top: 0;
+    margin-bottom: 0;
+    grid-column: span 3;
+    column-gap: 20px;
+}
+
+.itemPostre img{
+    object-fit: cover; 
+    aspect-ratio: 16/9; 
+    max-width: 100%;
+}
+
+.imagenPostres{
+    border-radius: 8px;
+    border: 4px solid #fff;
+}
+
+.plusIconPostres{
+    grid-column: 2 / span 2;
+    text-align: end;
+    margin-top: 3em;
+}
+
+.plusIconPostresSecundario{
+    grid-column: 2 / span 2;
+    text-align: end;
+    margin-top: 0.5em;
+}
+
+
+@media(min-width:768px){
+
+    .grid-container{
+        box-sizing: border-box;
+        padding: 10px 50px;
+        margin: 20px auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .itemPostrePrincipal{
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .itemPostreSecundario{
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .menuItemPostre{
+        height: 100%;
+        padding-top: 0;
+    }
+
+    .sectionContacto {
+        // margin: 30px;
+        display: flex;
+        flex-direction: row;
+        align-self: start;
+        justify-content: space-evenly;
+    }
+
+    fieldset{
+        width: 100%;
+        }
+
+    .sectionsGrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .headerContacto{
+        grid-column: span 2;
+    }
+
+    .map{
+        width: 40vw;
+        height: 500px; 
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media(min-width:900px){
+
+.menuItemPostreSecundario p{
+    font-size: 1.2em;
+}
+
+.articuloPrincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.itemPostreSecundario{
+    grid-column: span 1;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+@media(min-width:1024px){
+
+    .menuItemGridBootstrap{
+        border-radius: 5px;
+        box-shadow: -10px 5px 4px grey;
+        transition: 0.5s ease;
+    }
+    
+    .menuItemImg img{
+        border: 2px black solid;
+    }
+    
+    .menuItemText{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+            h3 {
+                margin-top: 0;
+            }
+            p {
+                font-size: 1.7em;
+            }
+    }
+
+
+    @media(min-width:1300px) {
+
+        .sideHeader{
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            position: absolute;
+            left: -80px;
+            z-index: 9999;
+        }
+
+        }
+    
+    .imgPlusIconSecundario{
+        width: 20px;
+        height: 20px;
+        transition: 0.5s ease;
+        &:hover{ 
+            cursor: pointer;
+            transform: scale(1.5) rotate(90deg);
+            transition-duration: 0.5s;
+            filter: invert(20%);
+        }
+    }
+    
+    .menuItemPostre{
+        align-self: start;
+        height: 100%;
+        position: relative;
+    }
+    
+    .plusIconPostres{
+        margin-top: 10px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    }
+    
+    @media(min-width:1400px) {
+        .menuItemPostre p{
+            font-size: 2em;
+        }
+        
+        .menuItemPostre h2{
+            font-size: 4em;
+        }
+    }
+
+    .menuItemTextReverse{
+        padding-left: 3em; 
+        padding-right: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+            p {
+                font-size: 1.7em;
+                margin-bottom: 0.5em;
+            }
+    }
+}
+
+section{
+    grid-area: itemMenu;
+}
+
+.wrapperSections{
+
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "itemMenu"
+    "footer"
+    ;
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Montserrat:wght@700&display=swap');
+
+@import "nav";
+@import "index";
+@import "secciones";
+@import "footer";
+
+*{
+    margin: 0;
+	padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    }
+
+body{
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+    background-blend-mode: soft-light,screen;
+    font-family: 'Montserrat', sans-serif;
+    }
+
